@@ -1,0 +1,263 @@
+baseURL: "https://akhilcherukuri.github.io"
+languageCode: "en-us"
+title: "Akhil Cherukuri Portfilo"
+theme: hugo-profile
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#    main: false
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Akhil Cherukuri"
+  description: Portfilo for Akhil; Cherukuri
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/profile_icon_512x512.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello, my name is"
+    title: "Akhil Cherukuri."
+    subtitle: "I build software for the embedded systems"
+    content: "Currently a Embedded Software Engineer in Test & Automation. Graduated with Masters in Computer Engineering at San Jose State University. Open for a challenging position and career in the embedded software industry."
+    image: /images/akhil_main.png
+    button:
+      enable: true
+      name: "Download Resume"
+      url: "/files/resume.pdf"
+      download: true 
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/akhilcherukuri
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/akhilcherukuri
+      customIcons:
+        - icon: /profile_icon_512x512.png
+          url: "https://www.akhilcherukuri.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/akhil.png"
+    content: |-
+      I am currently a Software Quality Assurance Test Engineer with a passion for Software Development.
+
+      I have a background in Computer Engineering and Electroincs and Communication Engineering, and I have a strong interest in the development of embedded systems and IoT products.     
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "C"
+        - "C++"
+        - "Python"
+        - "Bash"
+        - "Linux"
+        - "Azure DevOps"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software Quality Assurance Test Engineer,"
+        company: "HCL America"
+        companyUrl: "https://hcltech.com"
+        date: "Aug 2021 - Present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          I am currently working as a Software Quality Assurance Test Engineer at [HCL America](https://example.com) in Shreveport, LA. 
+          - Cooperated with developers to design and executed functional testing of ~1000 test scenarios. Acted as a subject-matter expert in functional and automation testing, carrying out ~10 training sessions for newcomers and stakeholders.
+          - Designed and implemented an automated testing tool to enable accurate replication of test scenarios. Accelerated average QA testing turn-around time by ~50%, allowing to complete and compile QA testing reports within the timeframe without increasing staff.
+          - Supervised and Documented software defects using a bug tracking system and reported defects involving program functionality with a 100% closure rate on Azure DevOps.
+          - Delivered thorough QA testing reports that determined product quality and release readiness for each sprint cycle.
+      - job: "Graduate Office Assistant"
+        company: "San Jose State University"
+        companyUrl: "https://www.sjsu.edu/housing/"
+        date: "April 2020 - Feb 2021"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: 
+        content: |
+          I worked as an Graduate Office Assistant for the SJSU Univeristy Housing Services.
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Master of Science in Computer Engineering"
+        school:
+          name: "San Jose State University (SJSU)"
+          #url: "https://example.org"
+        date: "2019 - 2021"
+        GPA: "3.7 out of 4.0"
+        content: | 
+          Courses: Embedded Software, Embedded Hardware Design, Embedded System Applications, Advanced Computer Design, System Software, Operating Systems, Computer Architecture, Object-Oriented Programming Data Structures and Algorithms (C++), Internet of Things
+      - title: "Bachelor of Technology in Electronics and Communication Engineering"
+        school:
+          name: "Jawaharlal Nehru Technological University, Hyderabad"
+          #url: "https://example.org"
+        date: "2009 - 2015"
+        GPA: "3.8 out of 4.0"
+        content: |
+          Courses: Embedded Systems Design, Microcontrollers, Objected Oriented Programming (Java), VLSI Design, Operating Systems, Computer Networks, Digital Electronics, Analog Electronics, Electronic Circuit Analysis, Computer Architecture and Organization, Wireless Communication and Networks.
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Example
+        content: Example
+        url: https://example.com
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: HealthCare IoT - Remote Monitoring and Operations Management for Hospitals
+        content: Designed to automaticaly capture health metrics like heart rate, blood pressure, temperature and more from patients who are not physically present in a healthcare facility. This eliminates the need for patients to travel to providers and saves time. Integrated with Amazon Alexa skills to be able to ask sensors stats directly from an alexa enabled device.
+        image: /images/healthcareiot.gif
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Python"
+          - "AWS IoT Core"
+          - "Raspberry Pi"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:akhil4hire@gmail.com
+
+
+      - title: Space Invaders
+        content: Designed Graphics and Splash Screen Driver for LED Matrix. Contributed to game logic development of collison detection and object movement. Created Driver for SPI communication between Main and Music Dev Board. Fabricated PCB to have a modular desined system.
+        image: /images/Spaceinvaders.gif
+        badges:
+          - "C"
+          - "FreeRTOS"
+          - "3D Print"
+          - "SJSU-Dev Board (ARM Cortex-M4 based NXP LPC4078)"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtu.be/H7LNjU0B7uw
+          - icon: fab fa-wordpress
+            url: http://socialledge.com/sjsu/index.php/F20:_Space_Invaders
+
+      - title: Autonomous RC Car (Can-Ster)
+        content: Implemented a self-navigating vehicle with obstacle avoidance and shortest path algorithms to reach a destination selected via a Bluetooth app.
+        image: /images/canster.gif
+        badges:
+          - "C"
+          - "FreeRTOS"
+          - "LiDAR"
+          - "CAN"
+          - "EAGLE PCB"
+          - "CMock"
+          - "SJSU-Dev Board (ARM Cortex-M4 based NXP LPC4078)"
+        links:
+          - icon: fab fa-youtube
+            url: https://youtu.be/H7LNjU0B7uw
+          - icon: fab fa-wordpress
+            url: http://socialledge.com/sjsu/index.php/S20:_Canster_Truck
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact Me"
+    content: Please feel free to get in touch with me at
+    email: akhil4hire@gmail.com
+    btnName: akhil4hire@gmail.com
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/akhilcherukuri
+      linkedin: https://linkedin.com/in/akhilcherukuri
+      twitter: false
+      instagram: false
+      facebook: false
